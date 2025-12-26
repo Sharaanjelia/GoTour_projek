@@ -1,0 +1,160 @@
+/* Enhanced Footer styles for GoTour */
+:root {
+  --primary: #059669;
+  --dark: #0b3b2b;
+  --muted: #94a3b8;
+  --bg-dark: #0f1724;
+  --white: #ffffff;
+  --footer-bg: linear-gradient(180deg, #071423 0%, #081628 55%, #071a25 100%);
+  --footer-glass: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0));
+}
+
+.footer {
+  background: var(--footer-bg);
+  color: rgba(255,255,255,0.85);
+  padding: 4.5rem 1.5rem 2.5rem;
+  border-top: 6px solid var(--primary);
+  position: relative;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  box-shadow: 0 -2px 24px 0 rgba(0,0,0,0.13);
+  overflow: hidden;
+}
+
+.footer-grid {
+  max-width: 1280px;
+  margin: 0 auto 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem 3.5rem;
+  padding: 1.5rem 2rem;
+  align-items: flex-start;
+}
+
+.footer-col h3 {
+  color: var(--white);
+  margin-bottom: 1rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: .85rem;
+  letter-spacing: 0.01em;
+}
+.footer-col h3::after {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 4px;
+  background: var(--primary);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 3px;
+}
+.footer-col p {
+  color: rgba(255,255,255,0.62);
+  line-height: 1.7;
+  max-width: 420px;
+  margin-top: .35rem;
+  font-size: 1.05rem;
+}
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-col ul li {
+  margin-bottom: .7rem;
+  display: flex;
+  gap: .6rem;
+  align-items: flex-start;
+  font-size: 1.05rem;
+  padding-left: 1.2em;
+  position: relative;
+}
+.footer-col ul li::before {
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background: var(--primary);
+  border-radius: 50%;
+  margin-right: .55rem;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  opacity: 0.95;
+  box-shadow: 0 0 4px 0 rgba(5,150,105,0.13);
+}
+.footer-col a {
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  transition: all .18s cubic-bezier(.4,0,.2,1);
+  font-weight: 500;
+  border-radius: 3px;
+  padding: 2px 4px;
+}
+.footer-col a:hover {
+  color: var(--primary);
+  background: rgba(5,150,105,0.08);
+  transform: translateX(5px) scale(1.04);
+  box-shadow: 0 2px 8px 0 rgba(5,150,105,0.08);
+}
+
+.footer-bottom {
+  text-align: center;
+  color: rgba(255,255,255,0.7);
+  padding-top: 1.6rem;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  margin-top: 2.25rem;
+  font-size: 1.04rem;
+  letter-spacing: 0.01em;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  left: 0; right: 0; top: 0;
+  height: 140px;
+  pointer-events: none;
+  background: var(--footer-glass);
+  z-index: 0;
+}
+.footer > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Responsive improvements */
+@media (max-width: 1000px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 1.5rem;
+    padding: 1.5rem 1rem;
+  }
+}
+@media (max-width: 700px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem 0;
+    padding: 1rem 0.5rem;
+  }
+  .footer {
+    padding: 2.2rem 0.5rem 1.5rem;
+  }
+}
+
+/* Utility for social icons (if used) */
+.footer a.icon {
+  display: inline-flex;
+  gap: .6rem;
+  align-items: center;
+  padding: .35rem .6rem;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.03);
+  font-size: 1.1em;
+  transition: background .18s;
+}
+.footer a.icon:hover {
+  background: rgba(5,150,105,0.13);
+  color: var(--primary);
+}
