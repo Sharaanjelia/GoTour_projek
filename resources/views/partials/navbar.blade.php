@@ -4,7 +4,7 @@
 <div class="site-navbar-inner">
     <div class="navbar-left">
       <a class="navbar-brand fw-bold" href="{{ url('/') }}">
-        <img src="{{ asset('images/IMG_7079-removebg-preview.png') }}" height="50" alt="GoTour">
+        <img src="{{ asset('storage/logo/image.png') }}" height="120" style="max-width:120px; background: transparent; border-radius:12px;" alt="GoTour">
       </a>
       <button class="navbar-toggler" type="button" aria-expanded="false" aria-controls="navbarNav" aria-label="Toggle navigation">☰</button>
     </div>

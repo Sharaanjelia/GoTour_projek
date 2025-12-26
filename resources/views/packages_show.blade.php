@@ -12,7 +12,7 @@
 	<div class="bg-white p-6 rounded shadow-sm grid lg:grid-cols-3 gap-6 items-start">
 		<div class="col-span-2">
 			<div class="tour-cover" style="height:360px; border-radius:12px; overflow:hidden;">
-				<img src="{{ $package->cover_image ? asset('storage/'.$package->cover_image) : 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80' }}" alt="{{ $package->title }}" style="height:100%; width:100%; object-fit:cover;">
+				<img src="{{ $package->cover_image ? asset('storage/packages/'.$package->cover_image) : 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80' }}" alt="{{ $package->title }}" style="width:100%; max-height:400px; object-fit:cover;">
 			</div>
 
 			<div class="mt-4">

@@ -1,11 +1,11 @@
 /* Enhanced Footer styles for GoTour */
 :root {
-  --primary: #059669;
-  --dark: #0b3b2b;
+  --primary: #0a2342; /* brand blue from logo */
+  --dark: #0a2342;
   --muted: #94a3b8;
-  --bg-dark: #0f1724;
+  --bg-dark: #0a2342;
   --white: #ffffff;
-  --footer-bg: linear-gradient(180deg, #071423 0%, #081628 55%, #071a25 100%);
+  --footer-bg: linear-gradient(180deg, #0a2342 0%, #163e6c 100%);
   --footer-glass: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0));
 }
 
@@ -13,7 +13,7 @@
   background: var(--footer-bg);
   color: rgba(255,255,255,0.85);
   padding: 4.5rem 1.5rem 2.5rem;
-  border-top: 6px solid var(--primary);
+  /* border-top: 6px solid var(--primary); */
   position: relative;
   font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
   box-shadow: 0 -2px 24px 0 rgba(0,0,0,0.13);

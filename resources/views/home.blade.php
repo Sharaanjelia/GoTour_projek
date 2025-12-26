@@ -116,19 +116,19 @@
         <h2>Tim Kami</h2>
         <div class="team">
             <div class="team-member scroll-animate">
-                <img src="{{ asset('images/Shara.jpg') }}" alt="Shara Anjelia">
+                <img src="{{ asset('storage/team/Shara.png') }}" alt="Shara Anjelia">
                 <h3>Shara Anjelia</h3>
                 <p>CEO & Pendiri</p>
             </div>
 
             <div class="team-member scroll-animate">
-                <img src="{{ asset('images/Fataya.jpg') }}" alt="Fataya Pratama">
+                <img src="{{ asset('storage/team/Fataya.jpg') }}" alt="Fataya Pratama">
                 <h3>Fataya Pratama</h3>
                 <p>Kepala Operasi</p>
             </div>
 
             <div class="team-member scroll-animate">
-                <img src="{{ asset('images/Khairunnisa.jpg') }}" alt="Khairunnisa">
+                <img src="{{ asset('storage/team/Khairunnisa.png') }}" alt="Khairunnisa">
                 <h3>Khairunnisa Nur Aqila</h3>
                 <p>Desainer UI/UX</p>
             </div>
